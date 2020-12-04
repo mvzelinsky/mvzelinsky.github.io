@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 50px auto;
+    font-size: 3em;
+    color: rgb(68, 12, 136);
+}
+
+h3{
+    margin-left: 15px;
+    color: rgb(192, 10, 122);
+    font-size: 1.7em;
+}
+
+p{
+    margin: 15px 15px 50px 15px;
+    font-size: 1.3em;
+    
+}
+
+ul{
+    font-size: 1.4em;
+    margin: 50px 40px;
+}
+
+li{
+    margin-top: 10px;
+}
