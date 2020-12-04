@@ -6,12 +6,12 @@
 }
 
 .fix-container{
-    margin: auto;
+    margin: 0 auto;
     max-width: 1300px;
 }
 
 header{
-    width: 100%;
+    width: 100vw;
     height: 70px;
     background: linear-gradient(90deg, rgb(56, 2, 122), purple, deeppink);
     position: fixed;
@@ -54,8 +54,12 @@ header{
 
 .main{
     font-family: 'Playfair Display', serif;
-    display: flex;
     margin-bottom: 120px;
+}
+
+.main .fix-container{
+    display: flex;
+    
 }
 .left-side{
     padding-top: 100px;
@@ -80,13 +84,13 @@ header{
 }
 
 .brain-logo{
-    height: 400px;
-    width: 500px;
+    height: 390px;
+    width: 485px;
 }
 
 /*О чем сайт*/
 .about{
-    height: 100vh;
+    height: 105vh;
     /*background: linear-gradient(90deg, rgb(129, 70, 163), rgb(194, 88, 153));*/
     background-image: url(./img/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg);
     background-size: cover;
@@ -124,26 +128,20 @@ h1{
 }
 
 .about-text{
-    width: 80%;
-    margin: auto;
-    margin-top: 110px;
-    font-size: 30px;
+    margin: 30px;
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    padding-right: 30px;
     color: white;
-    line-height: 57px;
 }
 
 .swipe-bot{
     color: white;
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
-    width: 80%;
-    margin: auto;
-    margin-top: 120px;
     text-align: center;
     letter-spacing: 1px;
+    position: relative;
+    margin-top: 50px;
 }
 
 /*---*/
@@ -153,6 +151,7 @@ h1{
 .maket .fix-container{
     display: flex;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .img-box{
@@ -160,8 +159,8 @@ h1{
 }
 
 .img-box img{
-    width: 630px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
     
 }
 .text-box{
@@ -230,8 +229,6 @@ h1{
 
 
 /*--------------*/
-
-
 
 .article{
     width: 450px;
@@ -345,4 +342,238 @@ h1{
 
 .ex5{
     padding-top: 360px;
+}
+
+
+@media (max-width: 480px){
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Oswald', sans-serif;
+        padding-top: 40px;
+        color: rgb(49, 13, 94);
+    }
+
+    .button{
+        padding-top: 10px;
+        width: 70px;
+    }
+
+    .header-icon{
+        height: 25px;
+        width: 25px;
+    }
+
+    .nav-link{
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    /*-----------------*/
+ 
+    .main{
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 50px;
+    }
+
+    .main .fix-container{
+        display: flex; 
+        flex-direction: column; 
+    }
+    .left-side{
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .left-side h2{
+        font-size: 6em;
+        color: rgb(58, 14, 112);
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .left-side h2 span{
+        margin-left: 80px;
+    }
+
+    .right-side{
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .brain-logo{
+        height: 210px;
+        width: 285px;
+    }
+
+    /*----------------------*/
+    .about{
+        height: 90vh;
+    }
+    
+    .about-text{
+        margin: 55px 20px 25px 80px;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        padding-right: 30px;
+        color: white;
+    }
+    
+    .swipe-bot{
+        color: white;
+        font-size: 35px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        letter-spacing: 1px;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    /*----------*/
+   
+    .maket .fix-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .img-box{
+        width: 100%;
+    }
+
+    .img-box img{
+        width: 380px;
+        height: 280px;
+        
+    }
+    .text-box{
+        width: 100%;
+    }
+
+    .text-box p{
+        font-size: 1.5em;
+        line-height: 30px;
+        margin: 30px 35px;
+    }
+
+    .more-info{
+        margin: 30px 30px 10px 90px;
+        font-size: 1.8em;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+
+    .more-btn{
+        line-height: 60px;
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        border: none;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        padding: 5px;
+        border-radius: 7px;
+        border: 1px grey solid;
+    }
+
+    .maket a:hover{
+        background: linear-gradient(90deg, rgb(56, 2, 122), purple, deeppink);
+        color: whitesmoke;
+        transition: 0.5s;
+        border: none;
+    }
+
+    /*------------*/
+    
+    .trailer-video{
+        width: 95%;
+        height: 250px;
+    }
+
+    .other-videos{  
+        width: 95%;
+        margin: 50px 10px 10px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video{
+        margin-top: 15px;
+    }
+
+    /*-------------*/    
+    .article{
+        width: 400px;
+        margin-top: 50px;
+    }
+
+
+    .article-img{
+        width: 100%;
+        min-height: 270px;    
+    }
+
+    .article-img img{
+        width: 100%;
+        height: 270px;
+    }
+
+    .article-text{
+        margin: 10px;
+        text-align: center;
+    }
+    .article h3{
+        font-size: 1.7em;
+        color:  rgb(56, 2, 122);
+        font-family: "Poppins", sans-serif;
+    }
+
+    .upper-articles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle-articles{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*---------------*/
+
+    #practice .fix-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exercise{
+        width: 90%;
+        height: 150px;
+        background-color: rgb(87, 19, 197, 0.5);
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 20px;
+    }
+
+    .exercise p{
+        text-align: center;
+        color: white;
+        font-size: 1.4em;
+        font-family: "Poppins", sans-serif;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+
+    .ex1, .ex2, .ex3, .ex4, .ex5, .ex6{
+        padding-top: 60px;
+    }
+
 }
