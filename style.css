@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    width: 100vw;
+}
+
 .fix-container{
     margin: 0 auto;
     max-width: 1300px;
@@ -410,11 +414,11 @@ h1{
 
     /*----------------------*/
     .about{
-        height: 90vh;
+        height: 840px;
     }
     
     .about-text{
-        margin: 55px 20px 25px 80px;
+        margin: 55px 10px 25px 70px;
         font-size: 24px;
         font-family: 'Roboto', sans-serif;
         padding-right: 30px;
@@ -423,12 +427,12 @@ h1{
     
     .swipe-bot{
         color: white;
-        font-size: 35px;
+        font-size: 30px;
         font-family: 'Roboto', sans-serif;
         text-align: center;
         letter-spacing: 1px;
         position: relative;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     /*----------*/
@@ -445,8 +449,8 @@ h1{
     }
 
     .img-box img{
-        width: 380px;
-        height: 280px;
+        width: 350px;
+        height: 260px;
         
     }
     .text-box{
