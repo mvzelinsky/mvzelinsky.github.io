@@ -415,6 +415,7 @@ h1{
     /*----------------------*/
     .about{
         height: 840px;
+        width: 100vw;
     }
     
     .about-text{
@@ -511,7 +512,7 @@ h1{
     /*-------------*/    
     .article{
         width: 400px;
-        margin-top: 50px;
+        margin: 50px 20px;
     }
 
 
